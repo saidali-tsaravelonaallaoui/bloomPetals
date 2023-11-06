@@ -1,0 +1,228 @@
+/* Importation des polices depuis Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&family=Pacifico&display=swap');
+
+/* Définition de la police personnalisée pour CeraPro */
+@font-face {
+    font-family: CeraPro;
+    src: url(../font/CeraPro-Regular.ttf);
+}
+
+/* Styles de base pour le corps du document */
+body {
+    font-family: CeraPro;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f6f3;
+}
+
+/* Styles de la barre de navigation */
+nav {
+    overflow: hidden;
+    background: #cc9bb926;
+    line-height: 70px;
+}
+
+/* Styles des liens dans la barre de navigation */
+nav a {
+    display: inline-block;
+    text-align: center;
+    margin-left: 50px;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #CB1D63;
+    line-height: 50px;
+}
+
+/* Effet de survol sur les liens de la barre de navigation */
+nav a:hover {
+    color: #000;
+}
+
+/* Style de l'élément actif dans la barre de navigation */
+nav .active {
+    background: #601b75;
+}
+
+/* Styles pour la zone de recherche dans la barre de navigation */
+nav input[type="text"] {
+    float: right;
+    padding: 6px;
+    border: 1px solid #d51111;
+    margin: 15px 150px 0 0;
+    font-size: 20px;
+    border-radius: 20px;
+    outline: none;
+}
+
+/* Media Query pour rendre la navigation responsive */
+@media (max-width: 768px) {
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        margin: 0;
+        padding: 10px;
+    }
+
+    nav input[type="text"] {
+        float: none;
+        margin: 15px auto;
+    }
+}
+
+/* Styles de la section "info_bloom" */
+.info_bloom {
+    text-align: center;
+    padding-left: 10px;
+    margin: 80px;
+}
+
+/* Styles pour le titre principal h1 */
+h1 {
+    font-family: Pacifico;
+    font-size: 80px;
+    color: rgb(141, 50, 115);
+    margin-bottom: 10px;
+}
+
+/* Styles pour différentes tailles d'écrans */
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+}
+
+/* Styles pour les paragraphes dans la section "info_bloom" */
+.info_bloom p {
+    text-align: center;
+    border-radius: 20px;
+}
+
+/* Styles pour le titre h2 */
+h2 {
+    text-transform: uppercase;
+    font-size: 35px;
+    color: #CB1D63;
+}
+
+/* Styles généraux pour les liens */
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Styles pour la section d'images "image_l11" */
+.image_l11 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* Styles pour les articles d'images 
+.img_l1 article {
+    display: inline-block;
+    width: 347px;
+    height: 250px;
+}*/
+
+/* Styles pour les images dans la section d'images */
+.image_l11 img {
+    display: block;
+    height: 250px;
+    object-fit: contain;
+    border-radius: 20px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+        rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    margin-top: 20px;
+}
+
+/* Effet de survol sur les images */
+.image_l11 img:hover {
+    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Styles pour la section des services "sec_services" */
+.sec_services {
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Styles pour les divs dans la section des services */
+.sec_services div {
+    margin: 40px;
+}
+
+/* Styles pour les paragraphes dans la section des services */
+.sec_services p {
+    margin: 20px;
+}
+
+/* Styles pour la section des services "nos_services" */
+.nos_services {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Styles pour chaque service individuel */
+.service1,
+.service2,
+.service3 {
+    border-radius: 10px;
+    margin-bottom: 50px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+        rgba(255, 255, 255, 0.103) -6px -2px 16px 0px;
+}
+
+/* Effet de survol sur les services */
+.service1:hover,
+.service2:hover,
+.service3:hover {
+    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Styles pour les articles dans la section des services */
+.nos_services article {
+    flex: 1;
+    margin: 0 10px;
+    text-align: left;
+}
+
+/* Styles pour le titre h3 dans la section des services */
+.nos_services h3 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #CB1D63;
+}
+
+/* Styles pour les paragraphes dans la section des services */
+.nos_services p {
+    text-align: inherit;
+}
+
+/* Styles pour le lien "Lire la suite" */
+.read_more {
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    background: none;
+    border: #fff;
+    text-align: inherit;
+    color: #CB1D63;
+    text-decoration: none;
+}
+
+/* Styles pour le pied de page */
+footer {
+    text-align: center;
+    margin-top: 30px;
+}
